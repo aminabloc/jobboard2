@@ -22,7 +22,7 @@ func main() {
 	app := fiber.New()
 
 	app.Use(cors.New(cors.Config{
-		AllowOrigins: "http://localhost:5173",
+		AllowOrigins: "http://localhost:3006",
 		AllowHeaders: "Origin, Content-Type, Accept",
 	}))
 
@@ -102,6 +102,6 @@ func main() {
 	})
 
 	//SET UP PORT
-	log.Fatal(app.Listen(":4001"))
+	log.Fatal(app.Listen(":4002"))
 
 }
